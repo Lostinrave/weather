@@ -63,7 +63,8 @@ const server=http.createServer((req, res)=>{
     }
 });
 
-server.listen(3000, 'localhost');
+server.listen(process.env.PORT);
+console.log("Listening: "+process.env.PORT);
 
 
 // forecast('kaunas', (data)=>{
